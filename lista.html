@@ -13,7 +13,7 @@ EXEMPLO: */
 
 h1 {
      color: rgb(196, 89, 238);
-     text-align: center;
+     text-align: center; 
 }
 
 h2 { 
@@ -32,9 +32,23 @@ p {
 usando seletor CLASSE (.) */
 
 .centralizar { text-align: center; }
+.destaque 
+{ 
+        background-color: rgb(90, 231, 219);
+        border: solid 2px rgb(28, 8, 206);
+}
+
+/* REGRA CSS
+Usando o seletor ID (IDENTIFICADOR) (#) */
+
+ #listas { 
+      background-color: rgb(62, 221, 213);
+      box-shadow: black 1px 1px 3px;
+      padding: 8px;
+}
+
 
 </style>
-
 
 </head>
 
@@ -44,7 +58,7 @@ usando seletor CLASSE (.) */
 
 <a href="links.html">voltar</a>
 </p>
-<h1>Trabalhando com Listas</h1>
+<h1 class="destaque">Trabalhando com Listas</h1>
 <p>Conteúdo representado na forma de uma relação de itens.</p>
 
 
@@ -54,16 +68,17 @@ usando seletor CLASSE (.) */
 
 <p>Outro texto </p>
 
+<div id="listas">
 <h2>Não-ordenada</h2>
-    <!-- para usar tags para indicar itens, como numero ou bolinhas é necessario usar as tags (Ul e Li) para bolinhas e (Ol e Li) para numeros 
-como se pode ver na tela -->
-
-<ul>
-<li>Limão</li>
-<li>Açúcar</li>
-<li>gelo</li>
-</ul>
-
+<!-- para usar tags para indicar itens, como numero ou bolinhas é necessario usar as tags (Ul e Li) para bolinhas e (Ol e Li) para numeros 
+    como se pode ver na tela -->
+    
+    <ul>
+    <li>Limão</li>
+    <li>Açúcar</li>
+    <li>gelo</li>
+    </ul>
+    
 
 
 <h2>Ordenada</h2>
@@ -74,6 +89,8 @@ como se pode ver na tela -->
 <li>Procurar o app desejado</li>
     
 </ol>
+</div>
+
 <p></p>
 
 <h2>Exemplo diversos</h2>
