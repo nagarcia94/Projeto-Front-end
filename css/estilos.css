@@ -1,0 +1,38 @@
+/* Este arquivo, faremos TODAS as REGRAS CSS necessárias para formatação do site */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagens/watercolor.png);
+    
+}
+
+
+h1 { 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(237, 228, 240); 
+    background-color: rgb(219, 128, 231); 
+    padding: 10px;
+    border: rgb(235, 92, 92) solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: rgb(182, 2, 32) 0px 0px 10px inset;
+
+
+
+
+
+
+
+
+} 
+
+#container {
+    background-color: rgb(241, 223, 241);
+    width: 65%;
+    margin: auto;
+    box-shadow: rgb(230, 2, 40) 0 0 5px;
+    padding: 16px;
+    border-radius: 15px;
+}
+
