@@ -20,9 +20,17 @@ O CSS é aplicado diretamente em cada tag HTML.
 O CSS é criado usando regras ( com seletores, propriedades e valores) dentro da própria página que queremos formatar. 
 
 As regras irão valer para todas as tags/elementos desta página. 
+---
+
+### Externa
 
 
---- 
+Arquivo CSS dedicado a elaboraçao de regras CSS.
+
+Este arquivo será ''conectado'' a cada pagina HTML do seu site, permitindo assim centralizar toda a estilização de um projeto. 
+
+
+
 
 ### Sobre seletores
 
@@ -41,3 +49,5 @@ Classe podem ser reutilizadas na mesma página e combinadas com  outras classes.
 #### ID ( Identificar)
 
 Regras criadas com seletor do tipo id, também são versáteis, ou seja, você determina onde aplicar o id e sua formação. **Atenção!** você não pode reaproveitar IDs, ou seja, seletor ID deve ser usado SOMENTE PAR UM ELEMENTO por pagina. 
+
+
