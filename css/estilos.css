@@ -9,15 +9,16 @@ body {
 
 h1 { 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(237, 228, 240); 
-    background-color: rgb(219, 128, 231);
+    color: rgb(239, 235, 240); 
+    background-color: rgb(219, 128, 231); 
     padding: 10px;
-    border: rgb(235, 92, 92) solid 2px;
+    border: rgb(235, 92, 92) solid 2px; 
     border-radius: 10px;
     text-align: center;
     text-transform: uppercase;
-    box-shadow: rgb(182, 2, 32) 0px 0px 10px inset;
-    width: 70%; 
+    box-shadow: rgb(119, 15, 33) 0px 0px 10px inset;
+    width: 70%;
+    margin: auto; 
 
 } 
 
@@ -73,4 +74,7 @@ figure{
 
 img { max-width: 100%;}
 
+/* Seletor descendente */
+
+p a { color: rgb(236, 8, 149);}
 
