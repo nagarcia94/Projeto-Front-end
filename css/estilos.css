@@ -17,7 +17,8 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     box-shadow: rgb(182, 2, 32) 0px 0px 10px inset;
-     
+    width: 70%; 
+
 } 
 
 #container {
@@ -61,4 +62,15 @@ h3 {
     color: rgb(236, 230, 230);
     border-radius: 4px;
 }
+
+
+/* Reset/Limpeza */
+
+figure{ 
+    margin: 0;
+    text-align: center;
+}
+
+img { max-width: 100%;}
+
 
