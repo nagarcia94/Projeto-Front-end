@@ -20,7 +20,6 @@ O CSS é aplicado diretamente em cada tag HTML.
 O CSS é criado usando regras ( com seletores, propriedades e valores) dentro da própria página que queremos formatar. 
 
 As regras irão valer para todas as tags/elementos desta página. 
----
 
 ### Externa
 
@@ -31,6 +30,7 @@ Este arquivo será ''conectado'' a cada pagina HTML do seu site, permitindo assi
 
 
 
+---
 
 ### Sobre seletores
 
