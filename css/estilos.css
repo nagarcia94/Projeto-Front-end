@@ -3,7 +3,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../imagens/watercolor.png);
-    background-attachment: fixed; 
+    background-attachment: fixed; color:
 }
 
 h1 { 
@@ -47,6 +47,7 @@ h3, p, figcaption {
 }
 
 h3 {
+    border-radius: 10px;
     padding: 8px;
     background: linear-gradient(
         45deg,
@@ -64,9 +65,11 @@ h3 {
 }
 
 .irevoltar {
-    background-color: rgb(229, 155, 231);
-    width: 12%;
+    width: 11%;
     margin: auto;
+    padding-top: 5px;
+    border-bottom: solid 5px rgb(159, 100, 237)
+
 }
 
 
@@ -84,4 +87,18 @@ img { max-width: 100%;}
 /* Seletor descendente */
 
 p a { color: rgb(236, 8, 149);}
+
+
+
+li {
+     list-style-image: url(../imagens/fundo03.gif);
+    /* ou usar list-style-type: square;  */
+    line-height:  20px
+}
+
+/* Seletor pseudo-elemento (usando 2x o dois pontos ::) */
+li::marker {
+    content: "🍓";
+    font-size: 9px;
+} 
 
