@@ -9,7 +9,7 @@ body {
 h1 { 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(239, 235, 240); 
-    background-color: rgb(219, 128, 231); 
+    background-color: rgb(229, 32, 255); 
     padding: 3px;
     border: rgb(235, 92, 92) solid 2px; 
     border-radius: 10px;
@@ -22,7 +22,7 @@ h1 {
 } 
 
 #container {
-    background-color: rgb(247, 219, 247);
+    background-color: rgba(196, 32, 95, 0.932);
     width: 70%;
     margin: auto;
     box-shadow: rgb(230, 2, 40) 0 0 5px;
@@ -93,29 +93,60 @@ li::marker {
 
 /* Regras para o menu */
 
-nav { text-align: center;}
+nav { 
+    text-align: center;
+}
 
 /* Regra para o estado inicial do link */
 nav a { 
     font-size: 18px;
+    margin-top: 20px;
     text-decoration: none;
     font-weight: bold;
-    background-color: rgb(117, 9, 150); 
+    background-color: rgb(133, 38, 161); 
     color:rgb(233, 12, 214);
     width: 50%;
     display: inline-block;
     padding: 10px;
 
-    /* Alterando o BOx model fazendo com que padding e border nao se alterem nas dimensões finais do elemento! */
+/* Alterando o BOx model fazendo com que padding e border nao se alterem nas dimensões finais do elemento! */
     box-sizing: border-box;  
 }
 
+/* Seletor Pseudo-classe (:first-child) */
+
+nav a:first-child { 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Seletor Pseudo-classe (:last-child) */
+
+nav a:last-child { 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
 
+/* Regra para o estado do link acionado 
+Pseudo- classe (:houver) passando o mouse
+Pseudo- classe (:focus)  pelo teclado */
 
-/* Regra para o estado do link acionado */
+nav a:hover, nav a:focus {
+    background-color: beige;
+    color: rgba(231, 2, 208, 0.658);
+}
 
+figure img { 
+    filter: grayscale();
+    transition: 2s;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
 
+figure img:hover { 
+    filter: none; 
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
 
+}
 
 
