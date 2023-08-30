@@ -10,7 +10,7 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(239, 235, 240); 
     background-color: rgb(219, 128, 231); 
-    padding: 10px;
+    padding: 3px;
     border: rgb(235, 92, 92) solid 2px; 
     border-radius: 10px;
     text-align: center;
@@ -64,17 +64,6 @@ h3 {
     border-radius: 4px;
 }
 
-.irevoltar {
-    width: 11%;
-    margin: auto;
-    padding-top: 5px;
-    border-bottom: solid 5px rgb(159, 100, 237)
-
-}
-
-
-
-
 /* Reset/Limpeza */
 
 figure{ 
@@ -101,4 +90,32 @@ li::marker {
     content: "🍓";
     font-size: 9px;
 } 
+
+/* Regras para o menu */
+
+nav { text-align: center;}
+
+/* Regra para o estado inicial do link */
+nav a { 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(117, 9, 150); 
+    color:rgb(233, 12, 214);
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+
+    /* Alterando o BOx model fazendo com que padding e border nao se alterem nas dimensões finais do elemento! */
+    box-sizing: border-box;  
+}
+
+
+
+
+/* Regra para o estado do link acionado */
+
+
+
+
 
