@@ -1,17 +1,23 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
 /* Este arquivo, faremos TODAS as REGRAS CSS necessárias para formatação do site */
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../imagens/watercolor.png);
-    
+    background-attachment: fixed; color:
 }
 
-
 h1 { 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(239, 235, 240); 
-    background-color: rgb(219, 128, 231); 
-    padding: 10px;
+    animation-name: caindo;
+    animation-duration: 5s;
+
+    font-family: 'Rubik Moonrocks', cursive;
+    color: rgb(10, 10, 10); 
+    background-color: rgb(229, 32, 255); 
+    padding: 3px;
     border: rgb(235, 92, 92) solid 2px; 
     border-radius: 10px;
     text-align: center;
@@ -23,17 +29,19 @@ h1 {
 } 
 
 #container {
-    background-color: rgb(247, 219, 247);
+    background-color: rgba(196, 32, 95, 0.795);
     width: 70%;
     margin: auto;
     box-shadow: rgb(230, 2, 40) 0 0 5px;
     padding: 16px;
     border-radius: 15px;
+    max-width: 800px;
+    min-width: 500px;
 }
 
 h2 {
     font-size: 20px;
-    border-bottom: rgb(166, 64, 197) solid 5px;
+    border-bottom: rgb(179, 61, 214) solid 5px;
     border-left: rgb(166, 64, 197) dashed 3px;
     padding-left: 20px; 
 }
@@ -48,6 +56,7 @@ h3, p, figcaption {
 }
 
 h3 {
+    border-radius: 10px;
     padding: 8px;
     background: linear-gradient(
         45deg,
@@ -64,7 +73,6 @@ h3 {
     border-radius: 4px;
 }
 
-
 /* Reset/Limpeza */
 
 figure{ 
@@ -77,4 +85,105 @@ img { max-width: 100%;}
 /* Seletor descendente */
 
 p a { color: rgb(236, 8, 149);}
+
+
+
+li {
+     list-style-image: url(../imagens/fundo03.gif);
+    /* ou usar list-style-type: square;  */
+    line-height:  20px
+}
+
+/* Seletor pseudo-elemento (usando 2x o dois pontos ::) */
+li::marker {
+    content: "🍓";
+    font-size: 9px;
+} 
+
+/* Regras para o menu */
+
+nav { 
+    text-align: center;
+}
+
+/* Regra para o estado inicial do link */
+nav a { 
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(197, 109, 224); 
+    color:rgb(233, 12, 214);
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+
+/* Alterando o BOx model fazendo com que padding e border nao se alterem nas dimensões finais do elemento! */
+    box-sizing: border-box;  
+}
+
+/* Seletor Pseudo-classe (:first-child) */
+
+nav a:first-child { 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Seletor Pseudo-classe (:last-child) */
+
+nav a:last-child { 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* Regra para o estado do link acionado 
+Pseudo- classe (:houver) passando o mouse
+Pseudo- classe (:focus)  pelo teclado */
+
+nav a:hover, nav a:focus {
+    background-color: beige;
+    color: rgba(231, 2, 208, 0.658);
+}
+
+figure img { 
+    filter: grayscale();
+    transition: 0.8s;
+    /* clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); */
+    transform: scale(0.8);
+}
+
+figure img:hover { 
+    filter: none; 
+    /* clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%); */
+    
+    /* transform: scale(1) rotate(360deg); */
+
+}
+
+
+/* Regras de animação */
+
+@keyframes caindo {
+    /*  como comeca: */
+    from { 
+        transform: translateY(-100px);
+        opacity: -1; 
+    }
+
+    
+    /* como termina */
+    to { transform: translateY(0); }
+}
+
+
+/* Pseudo-classe child:
+:first-child 
+:last-child
+:nth-child()
+*/
+
+ul li:first-child {color: rgb(255, 254, 255);}
+ul li:last-child { color:blue }
+ul li:nth-child(3) { color: chartreuse;}
 
