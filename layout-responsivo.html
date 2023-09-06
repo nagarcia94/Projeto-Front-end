@@ -1,13 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Responsivo</title>
+
+    <style>
+        /* Regras de uso geral */
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(234, 243, 222);
+        }
+
+        .container {
+            background-color: rgba(247, 253, 244, 0.979);
+            box-shadow: rgb(10, 235, 40) 0 0 10px;
+            padding: 8px;
+        }
+
+        /* CSS reset ( em alguns elemntos) */
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            padding: 5px 0;
+        }
+
+        h1 {
+            background-color: rgb(59, 170, 26);
+        }
+
+        nav {
+            background-color: rgb(230, 74, 47);
+        }
+
+        article {
+            padding: 8px;
+        }
+
+        #colunaA {
+            background-color: rgb(226, 174, 77);
+        }
+
+        #colunaB {
+            background-color: burlywood;
+        }
+
+        #colunaC {
+            background-color: chocolate;
+        }
+
+        footer {
+            background-color: rgba(241, 7, 7, 0.39);
+            height: 100px;
+        }
+
+        /* Regras condicionais (Media Queries) */
+
+        @media screen and (min-width: 535px) {
+
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            h1 {
+                width: 40%;
+            }
+
+            nav {
+                width: 60%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+        }
+
+        @media screen and (min-width: 750px) {
+
+            #colunaA {
+                width: 70%;
+            }
+
+            #colunaB {
+                width: 30%;
+            }
+
+            #colunaC {
+                width: 100%;
+            }
+
+            main {
+                display: flex;
+                /* Flex wrap quando abilitado fas com que os elementos sejam "quebrados" para linha de baixo, caso nao haja espaço. */
+                flex-wrap: wrap;
+            }
+        }
+
+@media screen and (mind-width: 1050px) {
+
+    #colunaA {
+        width:33,3%;
+    }
+    #colunaB {
+        width: 33,3%
+    }
+    #colunaC {
+        width:33,3%
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+}
+
+
+
+    </style>
+
+
 </head>
+
 <body>
+
     <div class="container">
-        
+
         <header>
             <h1>Exemplo</h1>
             <nav>
@@ -16,27 +146,33 @@
                 <a href="">Link 3</a>
             </nav>
         </header>
-        
+
         <main>
-            
+
             <article id="colunaA">
-            <h2>Coluna A</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat rem voluptas sunt libero tempora harum architecto et veritatis adipisci in quidem beatae ab, nam, ipsa aut ratione ducimus soluta natus!</p>
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat rem voluptas sunt libero tempora
+                    harum architecto et veritatis adipisci in quidem beatae ab, nam, ipsa aut ratione ducimus soluta
+                    natus!</p>
             </article>
-            
+
             <article id="colunaB">
-            <h2>Coluna B</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat rem voluptas sunt libero tempora harum architecto et veritatis adipisci in quidem beatae ab, nam, ipsa aut ratione ducimus soluta natus!</p>
-        
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat rem voluptas sunt libero tempora
+                    harum architecto et veritatis adipisci in quidem beatae ab, nam, ipsa aut ratione ducimus soluta
+                    natus!</p>
+
             </article>
-            
-            
+
+
             <article id="colunaC">
-            <h2>Coluna C</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat rem voluptas sunt libero tempora harum architecto et veritatis adipisci in quidem beatae ab, nam, ipsa aut ratione ducimus soluta natus!</p>
-           
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat rem voluptas sunt libero tempora
+                    harum architecto et veritatis adipisci in quidem beatae ab, nam, ipsa aut ratione ducimus soluta
+                    natus!</p>
+
             </article>
-        
+
         </main>
 
 
@@ -44,9 +180,10 @@
             <h2>Rodapé</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, rerum!</p>
         </footer>
-    
+
     </div>
 
 
 </body>
+
 </html>
