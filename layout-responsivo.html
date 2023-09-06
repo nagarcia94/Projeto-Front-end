@@ -20,7 +20,7 @@
 
         .container {
             background-color: rgba(247, 253, 244, 0.979);
-            box-shadow: rgb(10, 235, 40) 0 0 10px;
+            box-shadow: rgb(128, 221, 159) 0 0 10px;
             padding: 8px;
         }
 
@@ -108,27 +108,34 @@
             }
         }
 
-@media screen and (mind-width: 1050px) {
-
-    #colunaA {
-        width:33,3%;
-    }
-    #colunaB {
-        width: 33,3%
-    }
-    #colunaC {
-        width:33,3%
-    }
-
-    main {
-        display: flex;
-        flex-wrap: wrap;
-    
-    }
-}
+        @media screen and (min-width: 1000px) {
 
 
+            .container {
+                max-width: 1000px;
+                margin: auto;
+            }
 
+            header {height: 100px;}
+
+          h1 { text-align: center;
+            padding: 20px;        
+        }
+
+        
+            #colunaA, #colunaB, #colunaC  {width: 33%;}
+
+            /* Desative o flex wrap se você precisa que realmente as colunas se mantenha lado a lado (nowrap) */
+            main {
+                display: flex;
+                flex-wrap:nowrap;
+                justify-content: space-between;
+            }
+
+            
+
+
+        }
     </style>
 
 
