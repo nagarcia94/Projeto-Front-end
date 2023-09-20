@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade REM </title>
+    <style>
+        html {
+            /* VALOR PADRÃO  de 16 px */
+            font-size: 16px;
+        }
+
+        p {font-size: 1rem;}
+        h1 { font-size: 2rem;}
+        h2 { font-size: 1rem;}
+
+        @media screen and (min-width: 450px) {
+           html {
+            font-size: 2rem;
+           }
+            
+        }
+
+        @media screen and (min-width: 550px) {
+            html { 
+                font-size: 4rem;
+            }
+            
+        }
+
+        /* se nao fosse usar a unidade REM teria que mudar a fonte ou qualquer unidade de medida repetindo as tags e mudando um por um como abaixo. 
+        com o REM é mais pratico mudando somente o html.
+        
+        p {font-size: 16px;}  
+        h1 { font-size: 48px;}
+        h2 { font-size: 32px;} */
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Unidade REM</h1>
+    <hr>
+    <h2>Conceito geral</h2>
+    <p>È uma unidade cuja o valor é relaitvo ao</p>
+    <code>font-size</code> do elemento <code>html</code> (também chamado de elemento raiz.)
+    <p>Por padrão o <code>font-size</code> do elemento raíz é de <b>16px</b>. Portanto, <b>1rem</b>equivale a <b>16px</b>.</p>
+
+
+
+
+</body>
+</html>
